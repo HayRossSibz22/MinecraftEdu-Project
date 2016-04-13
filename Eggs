@@ -1,0 +1,51 @@
+for n = 1, 2 do
+turtle.forward()
+end
+turtle.turnLeft()
+for n = 1, 4 do 
+turtle.forward()
+end
+turtle.turnRight()
+for n = 1, 18 do
+turtle.forward()
+end
+turtle.down()
+
+turtle.turnLeft()
+
+for n = 1, 12 do
+turtle.forward()
+end
+turtle.turnRight()
+ for n = 1, 3 do
+ turtle.forward()
+ end
+ for n = 1, 16 do
+ turtle.suck()
+ end
+turtle.turnRight()
+turtle.turnRight()
+for n = 1, 3 do
+turtle.forward()
+end
+turtle.turnLeft()
+for n = 1, 12 do
+turtle.forward()
+end
+turtle.turnRight()
+for n = 1, 14 do
+turtle.forward()
+end
+turtle.up()
+for n = 1, 4 do
+turtle.forward()
+end
+turtle.turnLeft()
+for n = 1, 4 do
+turtle.forward()
+end
+turtle.turnRight()
+turtle.forward()
+turtle.forward()
+turtle.turnLeft()
+turtle.turnLeft()
