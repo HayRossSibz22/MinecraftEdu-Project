@@ -1,0 +1,135 @@
+for n = 1, 2 do
+turtle.forward()
+end
+ 
+turtle.turnLeft()
+ 
+for n = 1, 4 do
+turtle.forward()
+end
+ 
+turtle.turnRight()
+ 
+for n = 1, 24 do
+turtle.forward()
+end
+ 
+turtle.down()
+ 
+turtle.turnRight()
+ 
+for n = 1, 4 do
+turtle.forward()
+end
+ 
+turtle.turnLeft()
+ 
+for n = 1, 12 do
+turtle.forward()
+end
+ 
+turtle.turnLeft()
+ 
+for n = 1, 7 do
+turtle.forward()
+end
+ 
+turtle.turnRight()
+ 
+for n = 1, 4 do
+turtle.forward()
+end
+ 
+turtle.turnRight()
+ 
+for n = 1, 5 do
+turtle.forward()
+turtle.forward()
+turtle.turnRight()
+turtle.place()
+turtle.turnLeft()
+end
+ 
+turtle.forward()
+turtle.forward()
+turtle.turnLeft()
+ 
+for n = 1, 4 do
+turtle.forward()
+end
+ 
+turtle.turnLeft()
+ 
+for n = 1, 5 do
+turtle.forward()
+turtle.forward()
+turtle.turnLeft()
+turtle.place()
+turtle.turnRight()
+end
+turtle.forward()
+turtle.forward()
+turtle.turnRight()
+ 
+for n = 1, 4 do
+turtle.forward()
+end
+ 
+turtle.turnRight()
+ 
+for n = 1, 5 do
+turtle.forward()
+turtle.forward()
+turtle.turnRight()
+turtle.place()
+turtle.turnLeft()
+end
+ 
+turtle.forward()
+turtle.forward()
+turtle.turnRight()
+ 
+for n = 1, 12 do
+turtle.forward()
+end
+turtle.turnRight()
+ 
+for n = 1, 5 do
+turtle.forward()
+end
+ 
+turtle.turnLeft()
+ 
+for n = 1, 12 do
+turtle.forward()
+end
+ 
+turtle.turnRight()
+ 
+for n = 1, 4 do
+turtle.forward()
+end
+ 
+turtle.turnLeft()
+ 
+for n = 1, 20 do
+turtle.forward()
+end
+ 
+turtle.up()
+ 
+for n = 1, 4 do
+turtle.forward()
+end
+ 
+turtle.turnLeft()
+ 
+for n = 1, 4 do
+turtle.forward()
+end
+ 
+turtle.turnRight()
+turtle.forward()
+turtle.forward()
+turtle.turnLeft()
+turtle.turnLeft()
