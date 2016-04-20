@@ -1,0 +1,11 @@
+while true do
+ 
+local success, blockbelow =  turtle.inspectDown()
+if blockbelow.name == "minecraft:cobblestone" then
+  turtle.forward()
+ 
+else
+turtle.turnRight()
+turtle.forward()
+end
+end
