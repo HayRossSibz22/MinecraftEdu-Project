@@ -3,7 +3,7 @@ local success, blockbelow =  turtle.inspectDown()
  
 if blockbelow.name == "minecraft:cobblestone" then
   turtle.forward()
-elseif blockbelow.name == "minecaft:brick_block" then
+elseif blockbelow.name == "minecraft:brick_block" then
  for n =1, 16 do
  
    turtle.suck()
