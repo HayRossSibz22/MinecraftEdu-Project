@@ -1,9 +1,12 @@
-while true do
+local puppy = true
+ 
+while puppy do
 local success, blockbelow =  turtle.inspectDown()
  
 if blockbelow.name == "minecraft:cobblestone" then
   turtle.forward()
-elseif blockbelow.name == "minecraft:brick_block" then
+ 
+elseif blockbelow.name == "minecraft:brick_block" then  
  for n =1, 16 do
  
    turtle.suck()
@@ -13,10 +16,16 @@ elseif blockbelow.name == "minecraft:brick_block" then
  turtle.turnLeft()
  turtle.forward()
  
- elseif blockbelow.name == "minecraft:redstone_block" then
- turtle.turnRight()
- turtle.turnRight()
+ elseif blockbelow.name == "minecraft:gold_block" then
+ for n = 1, 16 do
+   turtle.select(n)
+   turtle.drop()
+ end
+ turtle.turnLeft()
+ turtle.turnLeft()
  turtle.forward()
+ 
+ puppy = false
  
  else
 turtle.turnRight()
