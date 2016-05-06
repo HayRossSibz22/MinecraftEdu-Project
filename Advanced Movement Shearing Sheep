@@ -1,0 +1,31 @@
+local Gold = true
+ 
+while Gold do
+local success, blockbelow =  turtle.inspectDown()
+ 
+if blockbelow.name == "minecraft:stone" then
+turtle.forward()
+ 
+elseif blockbelow.name == "minecraft:iron_block" then
+turtle.turnRight()
+turtle.forward()
+elseif blockbelow.name == "minecraft:obsidian" then
+turtle.turnLeft()
+turtle.place()
+turtle.turnRight()
+turtle.forward()
+elseif blockbelow.name == "minecraft:gold_block" then
+ 
+  turtle.select(2)
+  turtle.drop()
+ 
+  turtle.turnLeft()
+  turtle.turnLeft()
+  turtle.forward()
+Gold = false
+ 
+  else
+turtle.turnRight()
+turtle.forward()
+end
+end
