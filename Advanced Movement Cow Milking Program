@@ -1,0 +1,36 @@
+local Gold = true
+ 
+while Gold do
+local success, blockbelow = turtle.inspectDown()
+ 
+if blockbelow.name == "minecraft:stonebrick" then
+   turtle.forward()
+elseif blockbelow.name == "minecraft:redstone_block" then
+  turtle.turnLeft()
+  turtle.forward()
+elseif blockbelow.name == "minecraft:sandstone" then
+  turtle.turnLeft()
+  turtle.place()
+  turtle.turnRight()
+  turtle.forward()
+elseif blockbelow.name == "minecraft:lapis_block" then
+  turtle.turnRight()
+  turtle.turnRight()
+  for n = 1, 11 do
+  turtle.forward()
+  end
+elseif blockbelow.name == "minecraft:gold_block" then
+  for n = 1, 16 do
+  turtle.select(n)
+  turtle.drop()
+end
+  turtle.turnLeft()
+  turtle.turnLeft()
+  turtle.forward()
+  Gold = false
+ 
+else
+turtle.turnRight()
+turtle.forward()
+end
+end
