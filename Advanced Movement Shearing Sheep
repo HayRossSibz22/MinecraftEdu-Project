@@ -15,7 +15,7 @@ turtle.place()
 turtle.turnRight()
 turtle.forward()
 elseif blockbelow.name == "minecraft:gold_block" then
- 
+ turtle.turnRight()
   turtle.select(2)
   turtle.drop()
  
