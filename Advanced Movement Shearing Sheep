@@ -23,7 +23,13 @@ elseif blockbelow.name == "minecraft:gold_block" then
   turtle.turnLeft()
   turtle.forward()
 Gold = false
- 
+elseif blockbelow.name == "minecraft:log" then
+  turtle.forward()
+elseif blockbelowe.name == "minecraft:diamond_block" then
+turtle.turnLeft()
+turtle.suck()
+turtle.turnRight()
+turtle.forward()
   else
 turtle.turnRight()
 turtle.forward()
