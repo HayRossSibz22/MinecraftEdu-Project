@@ -30,6 +30,9 @@ turtle.turnLeft()
 turtle.suck()
 turtle.turnRight()
 turtle.forward()
+elseif blockbelow.name == "minecraft:quartz_block then
+turtle.turnRight()
+turtle.forward()
   else
 turtle.turnRight()
 turtle.forward()
