@@ -20,6 +20,7 @@ elseif blockbelow.name == "minecraft:lapis_block" then
   turtle.forward()
   end
 elseif blockbelow.name == "minecraft:gold_block" then
+ turtle.turnRight()
   for n = 1, 16 do
   turtle.select(n)
   turtle.drop()
