@@ -15,7 +15,7 @@ turtle.place()
 turtle.turnRight()
 turtle.forward()
 elseif blockbelow.name == "minecraft:gold_block" then
- turtle.turnRight()
+turtle.turnRight()
   turtle.select(2)
   turtle.drop()
  
@@ -23,14 +23,17 @@ elseif blockbelow.name == "minecraft:gold_block" then
   turtle.turnLeft()
   turtle.forward()
 Gold = false
+elseif blockbelow.name == "minecraft:redstone_block" then
+turtle.turnLeft()
+turtle.forward()
 elseif blockbelow.name == "minecraft:log" then
   turtle.forward()
-elseif blockbelowe.name == "minecraft:diamond_block" then
+elseif blockbelow.name == "minecraft:diamond_block" then
 turtle.turnLeft()
 turtle.suck()
 turtle.turnRight()
 turtle.forward()
-elseif blockbelow.name == "minecraft:quartz_block then
+elseif blockbelow.name == "minecraft:quartz_block" then
 turtle.turnRight()
 turtle.forward()
   else
