@@ -3,24 +3,24 @@ local Gold = true
 while Gold do
 local success, blockbelow = turtle.inspectDown()
  
-if blockbelow.name == "minecraft:stonebrick" then
+if blockbelow.name == "minecraft:stonebrick" then          -- Makes turtle move forward
    turtle.forward()
-elseif blockbelow.name == "minecraft:redstone_block" then
+elseif blockbelow.name == "minecraft:redstone_block" then  -- Makes turtle turn left and move forward
   turtle.turnLeft()
   turtle.forward()
-elseif blockbelow.name == "minecraft:sandstone" then
+elseif blockbelow.name == "minecraft:sandstone" then --Makes turtle farm the cows for milk
   turtle.turnLeft()
   turtle.place()
   turtle.turnRight()
   turtle.forward()
-elseif blockbelow.name == "minecraft:lapis_block" then
+elseif blockbelow.name == "minecraft:lapis_block" then -- Puts the turtle on its proper path
   turtle.turnRight()
   turtle.turnRight()
   for n = 1, 11 do
   turtle.forward()
   end
-elseif blockbelow.name == "minecraft:gold_block" then
- turtle.turnRight()
+elseif blockbelow.name == "minecraft:gold_block" then -- Makes the turtle put away its now gained milk and then shut down
+  turtle.turnRight()
   for n = 1, 16 do
   turtle.select(n)
   turtle.drop()
@@ -29,20 +29,20 @@ end
   turtle.turnLeft()
   turtle.forward()
   Gold = false
-elseif blockbelow.name == "minecraft:diamond_block" then
+elseif blockbelow.name == "minecraft:diamond_block" then --Makes the turtle pick up the buckets it will use
   turtle.turnRight()
   turtle.suck()
   turtle.turnLeft()
   turtle.forward()
-elseif blockbelow.name == "minecraft:iron_block" then
+elseif blockbelow.name == "minecraft:iron_block" then -- Makes the turtle turn right
 turtle.turnRight()
 turtle.forward()
-elseif blockbelowe.name == "minecraft:log" then
+elseif blockbelow.name == "minecraft:log" then           --Makes the turtle move forward
 turtle.forward()
-elseif blockbelow.name == "minecraft:quartz_block" then
-turtle.forward
+elseif blockbelow.name ==  "minecraft:quartz_block" then  --Makes the turtle continue on its path
+turtle.forward()
 else
-turtle.turnRight()
+turtle.turnRight()                                      -- Returns the turtle back onto its path
 turtle.forward()
 end
 end
