@@ -3,10 +3,10 @@ local puppy = true
 while puppy do
 local success, blockbelow =  turtle.inspectDown()
  
-if blockbelow.name == "minecraft:cobblestone" then
+if blockbelow.name == "minecraft:cobblestone" then -- Makes the turtle move forward
   turtle.forward()
  
-elseif blockbelow.name == "minecraft:brick_block" then  
+elseif blockbelow.name == "minecraft:brick_block" then  -- Makes the turtle pick up all the eggs from a chest
  for n =1, 16 do
  
    turtle.suck()
@@ -16,23 +16,23 @@ elseif blockbelow.name == "minecraft:brick_block" then
  turtle.turnLeft()
  turtle.forward()
  
-elseif blockbelow.name == "minecraft:redstone_block" then
+elseif blockbelow.name == "minecraft:redstone_block" then -- Makes the turtle turn left
   turtle.turnLeft()
   turtle.forward()
  
-elseif blockbelow.name == "minecraft:iron_block" then
+elseif blockbelow.name == "minecraft:iron_block" then     --Makes the turtle turn Right
 turtle.turnRight()
 turtle.forward()
  
-elseif blockbelow.name == "minecraft:diamond_block" then
+elseif blockbelow.name == "minecraft:diamond_block" then -- Does not make it pick up anythingt from a chest but continue on its path
 turtle.forward()
  
-elseif blockbelow.name == "minecraft:log" then
+elseif blockbelow.name == "minecraft:log" then -- Makes turtle move forward
 turtle.forward()
  
  
- elseif blockbelow.name == "minecraft:gold_block" then
-turtle.turnRight()
+ elseif blockbelow.name == "minecraft:gold_block" then -- Makes turtle put away the eggs it got on its trip in a chest and then return to the starting point
+ turtle.turnRight()
  for n = 1, 16 do
    turtle.select(n)
    turtle.drop()
@@ -41,12 +41,12 @@ turtle.turnRight()
  turtle.turnLeft()
  turtle.forward()
  
- puppy = false
+ puppy = false                                          -- Shuts down turtle
  elseif blockbelow.name == "minecraft:quartz_block" then
- turtle.turnLeft
- turtle.forward
+ turtle.turnLeft()
+ turtle.forward()
  else
-turtle.turnRight()
+turtle.turnRight()                                      -- Makes the turtle find its path again
 turtle.forward()
 end
 end
