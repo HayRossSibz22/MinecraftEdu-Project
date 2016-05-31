@@ -4,17 +4,17 @@ while Gold do
 local success, blockbelow =  turtle.inspectDown()
  
 if blockbelow.name == "minecraft:stone" then
-turtle.forward()
+turtle.forward()                                      -- Makes the turtle move forward over one stone
  
-elseif blockbelow.name == "minecraft:iron_block" then
+elseif blockbelow.name == "minecraft:iron_block" then -- Makes the turtle turn right and then go forward
 turtle.turnRight()
 turtle.forward()
-elseif blockbelow.name == "minecraft:obsidian" then
+elseif blockbelow.name == "minecraft:obsidian" then -- Makes the turtlel use the sheers to sheer the sheap
 turtle.turnLeft()
 turtle.place()
 turtle.turnRight()
 turtle.forward()
-elseif blockbelow.name == "minecraft:gold_block" then
+elseif blockbelow.name == "minecraft:gold_block" then -- Makes the turtle place all it has gotten into a chest to then shut down
 turtle.turnRight()
   turtle.select(2)
   turtle.drop()
@@ -23,21 +23,21 @@ turtle.turnRight()
   turtle.turnLeft()
   turtle.forward()
 Gold = false
-elseif blockbelow.name == "minecraft:redstone_block" then
+elseif blockbelow.name == "minecraft:redstone_block" then -- Makes the turtle turn left
 turtle.turnLeft()
 turtle.forward()
-elseif blockbelow.name == "minecraft:log" then
+elseif blockbelow.name == "minecraft:log" then  -- Also makes the turtle move forward but does the same for the other codes
   turtle.forward()
-elseif blockbelow.name == "minecraft:diamond_block" then
+elseif blockbelow.name == "minecraft:diamond_block" then -- Makes the turtle pick up sheers from a chest
 turtle.turnLeft()
 turtle.suck()
 turtle.turnRight()
 turtle.forward()
-elseif blockbelow.name == "minecraft:quartz_block" then
+elseif blockbelow.name == "minecraft:quartz_block" then -- Makes the turtle turn the right way to go on its proper path
 turtle.turnRight()
 turtle.forward()
   else
-turtle.turnRight()
+turtle.turnRight()                                      -- Helps turtle find its path  
 turtle.forward()
 end
 end
